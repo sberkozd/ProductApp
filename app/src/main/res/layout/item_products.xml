@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/midnightBlue">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_productImage"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        tools:background="@drawable/thumbnail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iphone 14 Pro Max"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham_medium"
+        app:layout_constraintTop_toBottomOf="@id/iv_productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1000"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham_medium"
+        app:layout_constraintTop_toBottomOf="@id/iv_productImage"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+    <View
+        android:id="@+id/divider_view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
