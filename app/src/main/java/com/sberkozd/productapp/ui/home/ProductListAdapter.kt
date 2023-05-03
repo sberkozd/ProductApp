@@ -1,4 +1,4 @@
-package com.sberkozd.unknown.ui.home
+package com.sberkozd.productapp.ui.home
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.sberkozd.unknown.databinding.ItemProductsBinding
-import com.sberkozd.unknown.models.Product
+import com.sberkozd.productapp.databinding.ItemProductsBinding
+import com.sberkozd.productapp.models.Product
 
 class ProductListAdapter(val clickListener: (product: Product) -> Unit
 ) : ListAdapter<Product, ProductListAdapter.ProductViewHolder>(DIFF_CALLBACK) {

@@ -1,4 +1,4 @@
-package com.sberkozd.unknown.network
+package com.sberkozd.productapp.network
 
 import okhttp3.Interceptor
 import okhttp3.Response

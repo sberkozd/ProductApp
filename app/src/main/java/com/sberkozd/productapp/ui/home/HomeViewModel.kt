@@ -1,8 +1,8 @@
-package com.sberkozd.unknown.ui.home
+package com.sberkozd.productapp.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sberkozd.unknown.models.Product
+import com.sberkozd.productapp.models.Product
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.sberkozd.unknown.models
+package com.sberkozd.productapp.models
 
 
 import com.squareup.moshi.Json

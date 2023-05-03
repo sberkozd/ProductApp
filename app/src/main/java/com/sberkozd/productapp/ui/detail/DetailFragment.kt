@@ -1,4 +1,4 @@
-package com.sberkozd.unknown.ui.detail
+package com.sberkozd.productapp.ui.detail
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import coil.load
-import com.sberkozd.unknown.databinding.FragmentDetailBinding
+import com.sberkozd.productapp.databinding.FragmentDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

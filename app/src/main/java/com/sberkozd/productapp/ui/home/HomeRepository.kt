@@ -1,16 +1,15 @@
-package com.sberkozd.unknown.ui.home
+package com.sberkozd.productapp.ui.home
 
-import com.sberkozd.unknown.di.NetworkRepository
-import com.sberkozd.unknown.di.NetworkResult
-import com.sberkozd.unknown.models.Product
-import com.sberkozd.unknown.network.UnknownService
-import com.sberkozd.unknown.responses.ProductListResponse
+import com.sberkozd.productapp.di.NetworkRepository
+import com.sberkozd.productapp.di.NetworkResult
+import com.sberkozd.productapp.network.ProductService
+import com.sberkozd.productapp.responses.ProductListResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
-class HomeRepository @Inject constructor(private val unknownService: UnknownService) :
+class HomeRepository @Inject constructor(private val productService: ProductService) :
     NetworkRepository {
 
     fun getProductList(
@@ -18,7 +17,7 @@ class HomeRepository @Inject constructor(private val unknownService: UnknownServ
     ) = flow {
 
         val result: NetworkResult<ProductListResponse> = wrapNetworkResult({
-            unknownService.getList()
+            productService.getList()
         })
 
         when (result) {

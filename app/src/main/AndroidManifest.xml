@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:name=".App"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Unknown"
+        android:theme="@style/Theme.ProductApp"
         tools:targetApi="31" >
         <activity
             android:name=".MainActivity"

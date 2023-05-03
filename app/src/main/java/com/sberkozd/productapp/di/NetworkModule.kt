@@ -1,10 +1,10 @@
-package com.sberkozd.unknown.di
+package com.sberkozd.productapp.di
 
 import android.content.Context
 import com.chuckerteam.chucker.api.ChuckerInterceptor
-import com.sberkozd.unknown.baseUrl
-import com.sberkozd.unknown.network.UnknownService
-import com.sberkozd.unknown.network.HttpRequestInterceptor
+import com.sberkozd.productapp.baseUrl
+import com.sberkozd.productapp.network.ProductService
+import com.sberkozd.productapp.network.HttpRequestInterceptor
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -50,7 +50,7 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideCoinService(retrofit: Retrofit): UnknownService {
-        return retrofit.create(UnknownService::class.java)
+    fun provideCoinService(retrofit: Retrofit): ProductService {
+        return retrofit.create(ProductService::class.java)
     }
 }

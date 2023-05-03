@@ -1,4 +1,4 @@
-package com.sberkozd.unknown
+package com.sberkozd.productapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

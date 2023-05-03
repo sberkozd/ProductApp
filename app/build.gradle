@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'com.sberkozd.unknown'
+    namespace 'com.sberkozd.productapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.sberkozd.unknown"
+        applicationId "com.sberkozd.productapp"
         minSdk 24
         targetSdk 33
         versionCode 1

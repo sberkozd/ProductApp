@@ -1,4 +1,4 @@
-package com.sberkozd.unknown.di
+package com.sberkozd.productapp.di
 
 import com.squareup.moshi.JsonDataException
 import retrofit2.Response

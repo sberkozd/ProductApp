@@ -1,4 +1,4 @@
-package com.sberkozd.unknown
+package com.sberkozd.productapp
 
 import org.junit.Test
 
